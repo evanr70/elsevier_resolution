@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "elsevier-resolution",
+  "version": "1.0",
+
+  "description": "Swaps all photos with their large versions.",
+
+  "icons": {
+    "48": "icons/elsevier.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.sciencedirect.com/*"],
+      "js": ["resolution.js"]
+    }
+  ]
+}
